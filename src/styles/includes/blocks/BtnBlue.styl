@@ -1,0 +1,23 @@
+.BtnBlue
+	display inline-flex
+	padding 1.2307em 3.2769em
+	border none
+	border-radius 40px
+	font-weight bold
+	font-size 13px
+	line-height 1.2307em
+	text-transform uppercase
+	white-space nowrap
+	letter-spacing -0.02em
+	background-color $blue2
+	color $white
+	@extend .transition
+
+	&:hover
+		background-color $roze
+	
+	&-arrow
+		padding 1.65em 4.8em 1.66em 3em
+		background-image url("data:image/svg+xml,%3Csvg width='9' height='14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 13l6-6-6-6' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E")
+		background-position calc(100% - 2.8em) center
+		background-repeat no-repeat

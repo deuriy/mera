@@ -2,6 +2,240 @@ extends /layouts/main_layout
 block vars
 	- var title = "Homepage";
 block content
-	p #{title}
+	.FirstSection
+		.FirstSection_textWrapper
+			.FirstSection_titleWrapper
+				h2.FirstSection_title Счастье #[em можно] измерить
+				a(href="/projects.html").BtnWhite.BtnWhite-arrow Наши проекты
+			.FirstSection_text
+				p Мы помогаем людям стать счастливее, создавая для них современные и комфортные пространства для жизни
+		.SocLinks.SocLinks-twoCol.FirstSection_socLinks
+			ul.SocLinks_list
+				li.SocLinks_item
+					a(href="https://www.facebook.com/merakuzbass" target="_blank").SocLink.SocLink-fb
+				li.SocLinks_item
+					a(href="https://vk.com/i_mera_ru" target="_blank").SocLink.SocLink-vk
+				li.SocLinks_item
+					a(href="https://www.instagram.com/i_mera_ru/" target="_blank").SocLink.SocLink-instagram
+		.FirstSection_bottom
+			a(href="#About").ArrowDown.FirstSection_arrowDown
+	.About#About
+		.Statistics.About_statistics
+			.Statistics_item
+				.Statistics_number 10
+				.Statistics_text лет на рынке #[br]недвижимости
+			.Statistics_item
+				.Statistics_number 15
+				.Statistics_text возведенных #[br]домов
+			.Statistics_item
+				.Statistics_number 1036
+				.Statistics_text готовых #[br]квартир
+		.About_left
+			.About_logoWrapper
+				img(src="/img/logo_about.png" alt="Logo about").About_logo
+		.About_right
+			.About_textWrapper
+				h2.About_title О компании
+				.About_text
+					p Компания основана в 2010 году под названием ИФК «Мера» и занималась инвестиционно- финансовой деятельностью и продажей недвижимости.
+				.About_note
+					p В 2014 открыто новое направление – строительство. Реализованы успешные проекты в Кемеровской области и за ее пределами, а также заграницей. В 2020 компания реорганизована в Компанию «МЕРА», направление девелопмента становится приоритетным.
+				a(href="#").BtnOutline Подробнее о нас
+	.Projects
+		.ProjectsSwiper.swiper-container
+			.swiper-wrapper
+				.swiper-slide
+					.Project
+						.Project_textWrapper
+							.Project_category Проекты в продаже
+							.Project_titleWrapper
+								h3.Project_title Парк-квартал
+								h4.Project_subtitle «Южный»
+							.EstatePanel.Project_estatePanel
+								.EstatePanel_left
+									.EstatePanel_item
+										.EstatePanel_itemName Адрес:
+										.EstatePanel_itemValue ул. Дружбы, д. 30
+									.EstatePanel_item
+										.EstatePanel_itemName Сдача очереди:
+										.EstatePanel_itemValue IV квартал 2021
+								.EstatePanel_right
+									.EstatePanel_logo
+									.EstatePanel_textWrapper
+										h4.EstatePanel_title Квартиры от
+										.EstatePanel_cost
+											.EstatePanel_number 1,4
+											.EstatePanel_currency млн. руб.
+							a(href="#").BtnOutline.BtnOutline-arrowTopRight Смотреть проект
+						.Project_imageWrapper
+							img(src="/img/project1.jpg" alt="Парк-квартал Южный").Project_img
+				.swiper-slide
+					.Project
+						.Project_textWrapper
+							.Project_category Проекты в продаже 2
+							.Project_titleWrapper
+								h3.Project_title Парк-квартал
+								h4.Project_subtitle «Южный» 2
+							.EstatePanel.Project_estatePanel
+								.EstatePanel_left
+									.EstatePanel_item
+										.EstatePanel_itemName Адрес:
+										.EstatePanel_itemValue ул. Дружбы, д. 30
+									.EstatePanel_item
+										.EstatePanel_itemName Сдача очереди:
+										.EstatePanel_itemValue IV квартал 2021
+								.EstatePanel_right
+									.EstatePanel_logo
+									.EstatePanel_textWrapper
+										h4.EstatePanel_title Квартиры от
+										.EstatePanel_cost
+											.EstatePanel_number 1,4
+											.EstatePanel_currency млн. руб.
+							a(href="#").BtnOutline.BtnOutline-arrow Смотреть проект
+						.Project_imageWrapper
+							img(src="/img/project1.jpg" alt="Парк-квартал Южный").Project_img
+				.swiper-slide
+					.Project
+						.Project_textWrapper
+							.Project_category Проекты в продаже 3
+							.Project_titleWrapper
+								h3.Project_title Парк-квартал
+								h4.Project_subtitle «Южный» 3
+							.EstatePanel.Project_estatePanel
+								.EstatePanel_left
+									.EstatePanel_item
+										.EstatePanel_itemName Адрес:
+										.EstatePanel_itemValue ул. Дружбы, д. 30
+									.EstatePanel_item
+										.EstatePanel_itemName Сдача очереди:
+										.EstatePanel_itemValue IV квартал 2021
+								.EstatePanel_right
+									.EstatePanel_logo
+									.EstatePanel_textWrapper
+										h4.EstatePanel_title Квартиры от
+										.EstatePanel_cost
+											.EstatePanel_number 1,4
+											.EstatePanel_currency млн. руб.
+							a(href="#").BtnOutline.BtnOutline-arrow Смотреть проект
+						.Project_imageWrapper
+							img(src="/img/project1.jpg" alt="Парк-квартал Южный").Project_img
+				.swiper-slide
+					.Project
+						.Project_textWrapper
+							.Project_category Проекты в продаже 4
+							.Project_titleWrapper
+								h3.Project_title Парк-квартал
+								h4.Project_subtitle «Южный» 4
+							.EstatePanel.Project_estatePanel
+								.EstatePanel_left
+									.EstatePanel_item
+										.EstatePanel_itemName Адрес:
+										.EstatePanel_itemValue ул. Дружбы, д. 30
+									.EstatePanel_item
+										.EstatePanel_itemName Сдача очереди:
+										.EstatePanel_itemValue IV квартал 2021
+								.EstatePanel_right
+									.EstatePanel_logo
+									.EstatePanel_textWrapper
+										h4.EstatePanel_title Квартиры от
+										.EstatePanel_cost
+											.EstatePanel_number 1,4
+											.EstatePanel_currency млн. руб.
+							a(href="#").BtnOutline.BtnOutline-arrow Смотреть проект
+						.Project_imageWrapper
+							img(src="/img/project1.jpg" alt="Парк-квартал Южный").Project_img
+			button(type="button").SwiperBtn.SwiperBtn-prev.ProjectsSwiper_btn.ProjectsSwiper_btn-prev
+			button(type="button").SwiperBtn.SwiperBtn-next.ProjectsSwiper_btn.ProjectsSwiper_btn-next
+	.Advantages
+		.Container
+			h2.Advantages_title Преимущества и ценности
+			.Advantages_wrapper
+				.Advantages_images
+					.Advantages_imgWrapper.Advantages_imgWrapper-reliability.Advantages_imgWrapper-active(data-index="0")
+						img(src="/img/advantages/reliability.jpg" alt="Надёжность")
+					.Advantages_imgWrapper.Advantages_imgWrapper-security(data-index="1")
+						img(src="/img/advantages/security.jpg" alt="Безопасность")
+					.Advantages_imgWrapper.Advantages_imgWrapper-comfort(data-index="2")
+						img(src="/img/advantages/comfort.jpg" alt="Комфорт")
+					.Advantages_imgWrapper.Advantages_imgWrapper-innovations(data-index="3")
+						img(src="/img/advantages/innovations.jpg" alt="Инновации")
+					.Advantages_imgWrapper.Advantages_imgWrapper-openness(data-index="4")
+						img(src="/img/advantages/openness.jpg" alt="Открытость")
+					.Advantages_imgWrapper.Advantages_imgWrapper-development(data-index="5")
+						img(src="/img/advantages/development.jpg" alt="Развитие")
+				.Advantages_items
+					.Advantages_item.Advantages_item-active(data-index="0")
+						h3.Advantages_itemTitle Надежность
+						h3.Advantages_itemContent
+							p Мы всегда делаем то, что обещаем. Качественное выполнения всех работ в срок.
+					.Advantages_item(data-index="1")
+						h3.Advantages_itemTitle Безопасность
+						h3.Advantages_itemContent
+							p Мы думаем о вашей безопасности и безопасности ваших семей. Нам важно создать пространство, в котором вы сможете по-настоящему отдохнуть
+					.Advantages_item(data-index="2")
+						h3.Advantages_itemTitle Комфорт
+						h3.Advantages_itemContent
+							p Мы создаем комфортную среду, в которой хочется проводить время, отвечающую мировым стандартам.
+					.Advantages_item(data-index="3")
+						h3.Advantages_itemTitle Инновации
+						h3.Advantages_itemContent
+							p Мы даем больше, чем могут предложить другие: больше комфорта, больше сервиса и положительных эмоций.
+					.Advantages_item(data-index="4")
+						h3.Advantages_itemTitle Открытость
+						h3.Advantages_itemContent
+							p Мы открыты новым идеям, новым трендам и веяниям
+					.Advantages_item(data-index="5")
+						h3.Advantages_itemTitle Развитие
+						h3.Advantages_itemContent
+							p Мы не стоим на месте, меняемся сами и меняем мир вокруг к лучшему
+	.Conditions
+		.Container
+			.Conditions_header
+				h2.Conditions_title Условия #[br]приобретения
+				a(href="#").BtnOutline.BtnOutline-arrow Все условия
+			.Conditions_paymentMethods
+				.PaymentMethod.Conditions_paymentMethod
+					.PaymentMethod_imgWrapper
+						img(src="/img/mortgage.jpg" alt="Ипотека от 5,85%").PaymentMethod_img
+						.Circle.PaymentMethod_circle %
+					.PaymentMethod_content
+						h3.PaymentMethod_title Ипотека от 5,85%
+						.PaymentMethod_text
+							p Мы аккредитованы в ведущих банках и готовы предложить максимально выгодные условия кредитования именно для вас.
+						a(href="#").ArrowTopRight.PaymentMethod_arrowLink
+				.PaymentMethod.Conditions_paymentMethod
+					.PaymentMethod_imgWrapper
+						img(src="/img/installment.jpg" alt="Рассрочка до 8 месяцев").PaymentMethod_img
+						.Circle.Circle-clockIcon.PaymentMethod_circle
+					.PaymentMethod_content
+						h3.PaymentMethod_title Рассрочка до 8 #[br]месяцев
+						.PaymentMethod_text
+							p Рассрочка предоставляется при первоначальном взносе 30%. При взносе более 50% рассрочка беспроцентная.
+						a(href="#").ArrowTopRight.PaymentMethod_arrowLink
+	.News
+		.Container
+			h2.Label.News_title Новости и акции
+			.NewsBlock.NewsBlock-borderTop.News_item
+				.NewsBlock_date 01 октября 2020
+				h3.NewsBlock_title Старт продаж нового дома в парк-квартале «Южный»
+				.NewsBlock_text
+					p Панорамное остекление, свободные планировки от 27,5 до 134 кв.м. Продажа по эскроу счетам. Срок сдачи – 4 квартал 2021 года.
+				a(href="#").ArrowTopRight.NewsBlock_arrowTopRight
+			.NewsBlock.News_item
+				.NewsBlock_date 9 сентября 2020
+				h3.NewsBlock_title Семейная ипотека
+				.NewsBlock_text
+					p Выгодные условия на приобретение квартиры для семей с детьми, рожденными в 2020 году. Ставка от 4,5% годовых.
+				a(href="#").ArrowTopRight.NewsBlock_arrowTopRight
+	.FormSection
+		.Container
+			form(action="").FormBlock
+				.FormBlock_inner
+					h3.FormBlock_title Перезвоним, проконсультируем, подберем лучшие варианты
+					.FormBlock_text
+						p Закажите консультацию и наш менеджер перезвонит вам в течении 15 минут
+					.FormBlock_wrapper
+						input(type="tel" name="phone" placeholder="Телефон").FormText.FormText-phone.FormBlock_formText
+						button(type="submit").BtnBlue.BtnBlue-arrow Получить консультацию
 block page_bottom
 	script(src="/js/index.js")

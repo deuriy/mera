@@ -1,0 +1,24 @@
+.BtnWhite
+	display inline-flex
+	padding 1.6384em 3.0769em
+	border-radius 40px
+	font-weight 600
+	font-size 13px
+	line-height 1.2307em
+	text-transform uppercase
+	white-space nowrap
+	letter-spacing -0.02em
+	background $white
+	color $blue2
+	@extend .transition
+
+	&:hover
+		background $blue2
+		color $white
+
+	&-arrow
+		padding-right 4.66923em
+		background $white url("data:image/svg+xml,%3Csvg width='9' height='14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 13l6-6-6-6' stroke='%23207FAC' stroke-width='2'/%3E%3C/svg%3E") calc(100% - 2.8769em) 49% no-repeat
+
+		&:hover
+			background $blue2 url("data:image/svg+xml,%3Csvg width='9' height='14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 13l6-6-6-6' stroke='%23FFF' stroke-width='2'/%3E%3C/svg%3E") calc(100% - 2.8769em) 49% no-repeat
