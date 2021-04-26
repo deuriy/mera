@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		let headerPhone = header.querySelector('.Phone');
 
 		if (scrolled > 150) {
-			header.classList.add('Header-fixed');
+			header.classList.add('Header-sticky');
 			if (header.classList.contains('Header-frontpage')) {
 				headerLogo.querySelector('.Logo_imgWhite').classList.add('hidden');
 				headerLogo.querySelector('.Logo_imgRoze').classList.remove('hidden');
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				headerPhone.classList.add('Phone-black');
 			}
 		} else {
-			header.classList.remove('Header-fixed');
+			header.classList.remove('Header-sticky');
 			if (header.classList.contains('Header-frontpage')) {
 				headerLogo.querySelector('.Logo_imgWhite').classList.remove('hidden');
 				headerLogo.querySelector('.Logo_imgRoze').classList.add('hidden');

@@ -1,0 +1,35 @@
+.TeamMember
+	width 340px
+
+	&_photoWrapper
+		margin-bottom 33px
+		font-size 0
+	
+	&_name
+		width 190px
+		margin-bottom 0.3em
+		font-weight 600
+		font-size 24px
+		line-height 1.1
+		letter-spacing -0.02em
+	
+	&_post
+		color $grey
+		font-size 16px
+		line-height 1.8
+	
+	&-twoCol
+		display flex
+		flex-direction row-reverse
+		align-items flex-end
+		width auto
+
+		.TeamMember_photoWrapper,
+		.TeamMember_textWrapper
+			flex-shrink 0
+		
+		.TeamMember_photoWrapper
+			margin-bottom 0
+		
+		.TeamMember_textWrapper
+			text-align right
