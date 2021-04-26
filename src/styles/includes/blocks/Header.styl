@@ -1,34 +1,32 @@
 .Header
-	top -100px
-	display flex
-	justify-content space-between
-	padding 23px 60px
-	height 98px
-	@extend .transition
+  display flex
+  justify-content space-between
+  padding 23px 60px
+  height 98px
+  position fixed
+  left 0
+  width 100%
+  top 0
+  z-index 100
+  @extend .transition
 
-	&_left,
-	&_right
-		display flex
-		align-items center
-	
-	&_logo
-		margin-right 87px
-	
-	&_phone
-		margin-top 0.3em
-		margin-right 3.4em
-	
-	&-sticky
-		position sticky
-		z-index 100
-		top 0
-		right 0
-		left 0
-		background $white
-	
-	&-frontpage
-		margin-bottom -98px
+  &_left,
+  &_right
+    display flex
+    align-items center
 
-		.Header_phone
-			margin-top 0
-			margin-right 4.1em
+  &_logo
+    margin-right 87px
+
+  &_phone
+    margin-top 0.3em
+    margin-right 3.4em
+
+  &-sticky
+    background $white
+    box-shadow 0 2px 10px rgba(0,0,0,0.05)
+
+  &-frontpage
+    .Header_phone
+      margin-top 0
+      margin-right 4.1em
