@@ -1,12 +1,9 @@
 .Header
-	position fixed
-	z-index 100
-	top 0
-	right 0
-	left 0
+	top -100px
 	display flex
 	justify-content space-between
 	padding 23px 60px
+	height 98px
 	@extend .transition
 
 	&_left,
@@ -18,7 +15,20 @@
 		margin-right 87px
 	
 	&_phone
-		margin-right 74px
+		margin-top 0.3em
+		margin-right 3.4em
 	
-	&-whiteBg
+	&-fixed
+		position fixed
+		z-index 100
+		top 0
+		right 0
+		left 0
 		background $white
+	
+	&-frontpage
+		margin-bottom -98px
+
+		.Header_phone
+			margin-top 0
+			margin-right 4.1em

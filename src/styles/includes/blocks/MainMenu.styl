@@ -9,11 +9,31 @@
 			margin-right 0
 	
 	&_link
+		position relative
+		padding-bottom 0.4em
 		color $white
 		font-weight 500
 		font-size 16px
 		line-height 1.25
+
+		&::after
+			content ''
+			position absolute
+			right 0
+			bottom 0
+			left 0
+			width 0
+			height 2px
+			margin auto
+			background $white
+			@extend .transition
+		
+		&:hover::after
+			width 100%
 	
 	&-black
 		.MainMenu_link
 			color $black
+
+			&::after
+				background $black

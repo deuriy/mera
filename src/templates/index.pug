@@ -1,4 +1,4 @@
-extends /layouts/main_layout
+extends /layouts/main_layout_frontpage
 block vars
 	- var title = "Homepage";
 block content
@@ -9,18 +9,18 @@ block content
 				a(href="/projects.html").BtnWhite.BtnWhite-arrow Наши проекты
 			.FirstSection_text
 				p Мы помогаем людям стать счастливее, создавая для них современные и комфортные пространства для жизни
-		.SocLinks.SocLinks-twoCol.FirstSection_socLinks
-			ul.SocLinks_list
-				li.SocLinks_item
-					a(href="https://www.facebook.com/merakuzbass" target="_blank").SocLink.SocLink-fb
-				li.SocLinks_item
-					a(href="https://vk.com/i_mera_ru" target="_blank").SocLink.SocLink-vk
-				li.SocLinks_item
-					a(href="https://www.instagram.com/i_mera_ru/" target="_blank").SocLink.SocLink-instagram
 		.FirstSection_bottom
+			.SocLinks.SocLinks-twoCol.FirstSection_socLinks
+				ul.SocLinks_list
+					li.SocLinks_item
+						a(href="https://www.facebook.com/merakuzbass" target="_blank").SocLink.SocLink-fb
+					li.SocLinks_item
+						a(href="https://vk.com/i_mera_ru" target="_blank").SocLink.SocLink-vk
+					li.SocLinks_item
+						a(href="https://www.instagram.com/i_mera_ru/" target="_blank").SocLink.SocLink-instagram
 			a(href="#About").ArrowDown.FirstSection_arrowDown
 	.About#About
-		.Statistics.About_statistics
+		.Statistics.Statistics-center.About_statistics
 			.Statistics_item
 				.Statistics_number 10
 				.Statistics_text лет на рынке #[br]недвижимости

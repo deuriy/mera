@@ -1,0 +1,103 @@
+.Timeline
+	&_startDot
+		position relative
+		width 80px
+		height 80px
+		margin 0 auto 40px
+		border 1px solid rgba($roze, .3)
+		border-radius 50%
+
+		&::before,
+		&::after
+			content ''
+			position absolute
+			top 0
+			right 0
+			bottom 0
+			left 0
+			margin auto
+			border-radius 50%
+
+		&::before
+			width 60px
+			height 60px
+			border 1px solid $roze
+		
+		&::after
+			width 24px
+			height 24px
+			background $roze
+	
+	&_items
+		position relative
+
+		&::after
+			content ''
+			position absolute
+			top 0
+			bottom 280px
+			left 50%
+			width 1px
+			background rgba($grey, .5)
+	
+	&_item
+		position relative
+		display flex
+		align-items center
+		padding 108px 0
+
+		&:first-child
+			.Timeline_year
+				background $roze
+				color $white
+
+		&:nth-child(even)
+			flex-direction row-reverse
+
+			.Timeline_imgWrapper
+				padding-right 0
+				padding-left 120px
+				text-align left
+
+			.Timeline_textWrapper
+				padding-right 120px
+				padding-left 0
+
+	&_year
+		position absolute
+		top 50%
+		left 50%
+		z-index 10
+		transform translate(-50%, -50%)
+		width 120px
+		height 120px
+		display inline-flex
+		justify-content center
+		align-items center
+		border-radius 50%
+		background #ECEFF6
+		font-size 36px
+		line-height 1.1
+		font-family $angelicaProFont
+
+	&_imgWrapper,
+	&_textWrapper
+		flex 50% 1 1
+	
+	&_imgWrapper
+		padding-right 120px
+		text-align right
+	
+	&_textWrapper
+		padding-left 120px
+	
+	&_title
+		margin-bottom 0.4em
+		font-size 36px
+		line-height 1.1
+		font-family $angelicaProFont
+	
+	&_text
+		font-size 14px
+		line-height 1.8
+		color $grey

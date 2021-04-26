@@ -33,18 +33,22 @@ document.addEventListener('DOMContentLoaded', function() {
 		let mainMenu = header.querySelector('.MainMenu');
 		let headerPhone = header.querySelector('.Phone');
 
-		if (scrolled > 200) {
-			header.classList.add('Header-whiteBg');
-			headerLogo.querySelector('.Logo_imgWhite').classList.add('hidden');
-			headerLogo.querySelector('.Logo_imgRoze').classList.remove('hidden');
-			mainMenu.classList.add('MainMenu-black');
-			headerPhone.classList.add('Phone-blue');
+		if (scrolled > 150) {
+			header.classList.add('Header-fixed');
+			if (header.classList.contains('Header-frontpage')) {
+				headerLogo.querySelector('.Logo_imgWhite').classList.add('hidden');
+				headerLogo.querySelector('.Logo_imgRoze').classList.remove('hidden');
+				mainMenu.classList.add('MainMenu-black');
+				headerPhone.classList.add('Phone-black');
+			}
 		} else {
-			header.classList.remove('Header-whiteBg');
-			headerLogo.querySelector('.Logo_imgWhite').classList.remove('hidden');
-			headerLogo.querySelector('.Logo_imgRoze').classList.add('hidden');
-			mainMenu.classList.remove('MainMenu-black');
-			headerPhone.classList.remove('Phone-blue');
+			header.classList.remove('Header-fixed');
+			if (header.classList.contains('Header-frontpage')) {
+				headerLogo.querySelector('.Logo_imgWhite').classList.remove('hidden');
+				headerLogo.querySelector('.Logo_imgRoze').classList.add('hidden');
+				mainMenu.classList.remove('MainMenu-black');
+				headerPhone.classList.remove('Phone-black');
+			}
 		}
 	}
 

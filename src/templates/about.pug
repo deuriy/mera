@@ -1,0 +1,124 @@
+extends /layouts/main_layout
+block vars
+	- var title = "About";
+block content
+	.Company
+		.Label.Company_label О компании
+		.Company_wrapper
+			.Company_logo
+			.Company_titleWrapper
+				h1.Company_title Компания «Мера» — 
+				.Company_slogan
+					p лидер в области проектирования и строительства жилых комплексов европейского качества
+			.Company_textWrapper
+				.Company_text
+					p Компания основана в 2010 году под названием ИФК «Мера» и занималась инвестиционно-финансовой деятельностью и продажей недвижимости. В 2014 открыто новое направление – строительство.
+					p Реализованы успешные проекты в Кемеровской области и за ее пределами, а также заграницей. В 2020 компания реорганизована в Компанию «МЕРА», направление девелопмента становится приоритетным.
+				.Statistics
+					.Statistics_item
+						.Statistics_number 10
+						.Statistics_text лет на рынке #[br]недвижимости
+					.Statistics_item
+						.Statistics_number 15
+						.Statistics_text возведенных #[br]домов
+	.Mission
+		img(src="/img/mission_img.jpg" alt="Миссия компании").Mission_img
+		.Container.Mission_container
+			.Quote Миссия компании «Мера» — создать высокий уровень комфорта
+		.Mission_bottom
+			a(href="#").Circle.Circle-viewProjects.Mission_circle смотреть #[br]все проекты
+			.Mission_bottomText
+				p В портфеле проектов компании — жилые комплексы высокого класса, показывающие новый уровень комфорта
+	.TimelineSection
+		.Container
+			.Label.TimelineSection_label Наша история
+			h2.SectionTitle.TimelineSection_title Основные этапы развития
+			.Timeline
+				.Timeline_startDot
+				.Timeline_items
+					.Timeline_item
+						.Timeline_year 2010
+						.Timeline_imgWrapper
+							img(src="/img/development_stages/2010.jpg" alt="Начало истории компании Мера").Timeline_img
+						.Timeline_textWrapper
+							h3.Timeline_title Начало истории компании Мера
+							.Timeline_text
+								p Официальный год основания компании. Подготовка к выходу на рынок недвижимости. Поиск площадок, разработка проектов, построение финмоделей, выбор партнёров и поставщиков, создание фирменного стиля, маркетинг и позиционирование.
+					.Timeline_item
+						.Timeline_year 2015
+						.Timeline_imgWrapper
+							img(src="/img/development_stages/2015.jpg" alt="Начало строительства ЖК «Южный»").Timeline_img
+						.Timeline_textWrapper
+							h3.Timeline_title Начало строительства ЖК «Южный»
+							.Timeline_text
+								p Официальный год основания компании. Подготовка к выходу на рынок недвижимости. Поиск площадок, разработка проектов, построение финмоделей, выбор партнёров и поставщиков, создание фирменного стиля, маркетинг и позиционирование.
+					.Timeline_item
+						.Timeline_year 2017
+						.Timeline_imgWrapper
+							img(src="/img/development_stages/2017.jpg" alt="Начало строительства ЖК «На Дарвина»").Timeline_img
+						.Timeline_textWrapper
+							h3.Timeline_title Начало строительства ЖК «На Дарвина»
+							.Timeline_text
+								p Официальный год основания компании. Подготовка к выходу на рынок недвижимости. Поиск площадок, разработка проектов, построение финмоделей, выбор партнёров и поставщиков, создание фирменного стиля, маркетинг и позиционирование.
+					.Timeline_item
+						.Timeline_year 2019
+						.Timeline_imgWrapper
+							img(src="/img/development_stages/2019.jpg" alt="Начало строительства ЖК «На Дарвина»").Timeline_img
+						.Timeline_textWrapper
+							h3.Timeline_title Начало строительства ЖК «На Дарвина»
+							.Timeline_text
+								p Официальный год основания компании. Подготовка к выходу на рынок недвижимости. Поиск площадок, разработка проектов, построение финмоделей, выбор партнёров и поставщиков, создание фирменного стиля, маркетинг и позиционирование.
+	.Advantages
+		.Container
+			h2.Advantages_title Преимущества и ценности
+			.Advantages_wrapper
+				.Advantages_images
+					.Advantages_imgWrapper.Advantages_imgWrapper-reliability.Advantages_imgWrapper-active(data-index="0")
+						img(src="/img/advantages/reliability.jpg" alt="Надёжность")
+					.Advantages_imgWrapper.Advantages_imgWrapper-security(data-index="1")
+						img(src="/img/advantages/security.jpg" alt="Безопасность")
+					.Advantages_imgWrapper.Advantages_imgWrapper-comfort(data-index="2")
+						img(src="/img/advantages/comfort.jpg" alt="Комфорт")
+					.Advantages_imgWrapper.Advantages_imgWrapper-innovations(data-index="3")
+						img(src="/img/advantages/innovations.jpg" alt="Инновации")
+					.Advantages_imgWrapper.Advantages_imgWrapper-openness(data-index="4")
+						img(src="/img/advantages/openness.jpg" alt="Открытость")
+					.Advantages_imgWrapper.Advantages_imgWrapper-development(data-index="5")
+						img(src="/img/advantages/development.jpg" alt="Развитие")
+				.Advantages_items
+					.Advantages_item.Advantages_item-active(data-index="0")
+						h3.Advantages_itemTitle Надежность
+						h3.Advantages_itemContent
+							p Мы всегда делаем то, что обещаем. Качественное выполнения всех работ в срок.
+					.Advantages_item(data-index="1")
+						h3.Advantages_itemTitle Безопасность
+						h3.Advantages_itemContent
+							p Мы думаем о вашей безопасности и безопасности ваших семей. Нам важно создать пространство, в котором вы сможете по-настоящему отдохнуть
+					.Advantages_item(data-index="2")
+						h3.Advantages_itemTitle Комфорт
+						h3.Advantages_itemContent
+							p Мы создаем комфортную среду, в которой хочется проводить время, отвечающую мировым стандартам.
+					.Advantages_item(data-index="3")
+						h3.Advantages_itemTitle Инновации
+						h3.Advantages_itemContent
+							p Мы даем больше, чем могут предложить другие: больше комфорта, больше сервиса и положительных эмоций.
+					.Advantages_item(data-index="4")
+						h3.Advantages_itemTitle Открытость
+						h3.Advantages_itemContent
+							p Мы открыты новым идеям, новым трендам и веяниям
+					.Advantages_item(data-index="5")
+						h3.Advantages_itemTitle Развитие
+						h3.Advantages_itemContent
+							p Мы не стоим на месте, меняемся сами и меняем мир вокруг к лучшему
+	.FormSection
+		.Container
+			form(action="").FormBlock
+				.FormBlock_inner
+					h3.FormBlock_title Перезвоним, проконсультируем, подберем лучшие варианты
+					.FormBlock_text
+						p Закажите консультацию и наш менеджер перезвонит вам в течении 15 минут
+					.FormBlock_wrapper
+						input(type="tel" name="phone" placeholder="Телефон").FormText.FormText-phone.FormBlock_formText
+						button(type="submit").BtnBlue.BtnBlue-arrow Получить консультацию
+block page_bottom
+	script(src="/js/index.js")
