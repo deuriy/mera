@@ -1,0 +1,39 @@
+extends /layouts/main_layout
+block vars
+	- var title = "Contacts";
+block content
+	.Company
+		.Label.Company_label Контакты
+		.Company_wrapper
+			.Company_customLogo.Company_customLogo-contacts
+			.Company_titleWrapper
+				h1.Company_title Свяжитесь #[br]с нами
+				.Company_slogan
+					p Мы с радостью ответим на все #[br]ваши вопросы
+			.Company_textWrapper
+				.Contacts
+					.Contacts_item
+						.Contacts_itemName Позвонить
+						.Contacts_itemValue
+							.Contacts_phoneWrapper
+								a(href="tel:+73842233323").Contacts_phone +7 (3842) 23-33-23
+							a(href="javascript:;").BtnBlue.BtnBlue-orderCall Заказать звонок
+					.Contacts_item
+						.Contacts_itemName Приехать
+						.Contacts_itemValue
+							.Contacts_address
+								p #[strong Центральный офис продаж] #[br]#[strong г. Кемерово, пр. Октябрьский, 2Б, оф. 40] #[br]Пн.-Вс. 9:00 - 18:00 #[br]Сб. 10:00 - 17:00
+							a(href="javascript:;").BtnBlue.BtnBlue-writeUs Написать нам
+	.MapSection
+		.MapSection_map#ContactsMap
+		.SocLinks.SocLinks-twoCol.MapSection_socLinks
+			ul.SocLinks_list
+				li.SocLinks_item
+					a(href="https://www.facebook.com/merakuzbass" target="_blank").SocLink.SocLink-fb
+				li.SocLinks_item
+					a(href="https://vk.com/i_mera_ru" target="_blank").SocLink.SocLink-vk
+				li.SocLinks_item
+					a(href="https://www.instagram.com/i_mera_ru/" target="_blank").SocLink.SocLink-instagram
+block page_bottom
+	script(src="/js/contacts.js")
+	script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW93iAmXx_qNSJ-PYhm8MJTA7XZE953V8&callback=contactsMapInit")
