@@ -1,8 +1,16 @@
 .About
 	position relative
-	min-height 1185px
 	padding-top 2.6%
-	// padding-bottom 12%
+	padding-bottom 8.5%
+
+	@media $lgMinus
+		padding-bottom 6%
+
+	@media $smMinus
+		padding-bottom 4%
+
+	@media $xs
+		padding-bottom 3%
 
 	&_left
 		position absolute
@@ -10,6 +18,18 @@
 		width 50%
 		padding 31% 0
 		pointer-events none
+
+		@media $lgMinus
+			width 40%
+
+		@media $smMinus
+			padding 26% 0
+		
+		@media $xs
+			position relative
+			// width 296px
+			width auto
+			padding 0
 
 		&::before
 			content ''
@@ -22,10 +42,26 @@
 			border 1px solid $roze
 			border-radius 50%
 
+			@media $lgMinus
+				height 87%
+			
+			@media $smMinus
+				display none
+
 	&_statistics
-		// margin-bottom 246px
 		margin-bottom 12.8%
-		margin-left 166px
+		margin-left 9%
+
+		@media $lgMinus
+			margin-bottom 9%
+			margin-left 4%
+		
+		@media $smMinus
+			margin-bottom 6%
+			margin-left 0
+		
+		@media $xs
+			margin-bottom 3%
 	
 	&_logoWrapper
 		position absolute
@@ -41,10 +77,31 @@
 		border-radius 50%
 		background $white
 		box-shadow 0 20px 80px rgba(46, 56, 91, 0.1)
+
+		@media $lgMinus
+			height 26.883%
+		
+		@media $smMinus
+			height 32.052%
+			transform translate(-25%, -10%)
+		
+		@media $xs
+			position relative
+			left 0
+			width 24%
+			margin auto
+			padding 6.7%
+			transform none
 	
 	&_right
 		width 50%
 		margin-left auto
+
+		@media $lgMinus
+			width 52%
+		
+		@media $xs
+			width auto
 	
 	&_textWrapper
 		position relative
@@ -52,6 +109,24 @@
 		max-width 100%
 		padding-right 90px
 		padding-bottom 6.7%
+
+		@media $lgMinus
+			width 520px
+			padding-right 65px
+			padding-bottom 4%
+
+		@media $smMinus
+			width 430px
+			padding-right 54px
+			padding-bottom 3.3%
+		
+		@media $xs
+			width 520px
+			margin 35px auto 0
+			padding 0 40px
+		
+		@media $xxs
+			padding 0 20px
 
 		&::after
 			content ''
@@ -62,6 +137,15 @@
 			height 320px
 			background linear-gradient(180deg, rgba(150, 80, 135, 0.2) 0%, $roze 100%)
 			pointer-events none
+
+			@media $lgMinus
+				width 135px
+				height 240px
+
+			@media $smMinus
+				display none
+				// width 112px
+				// height 200px
 	
 	&_title
 		margin-bottom 0.7em
@@ -69,15 +153,39 @@
 		font-size 64px
 		line-height 1.1
 		letter-spacing -0.02em
+
+		@media $lgMinus
+			font-size 48px
+
+		@media $smMinus
+			font-size 40px
+
+		@media $xs
+			font-size 33px
 	
 	&_text
 		margin-bottom 1.4em
 		font-size 24px
 		line-height 1.4
 		color $grey1
+
+		@media $lgMinus
+			font-size 18px
+
+		@media $lgMinus
+			font-size 15px
 	
 	&_note
 		margin-bottom 5.6em
 		color $grey1
 		font-size 14px
 		line-height 1.8
+
+		@media $lgMinus
+			font-size 11px
+
+		@media $smMinus
+			font-size 10px
+		
+		@media $xs
+			margin-bottom 3em

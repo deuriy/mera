@@ -2,19 +2,38 @@
 	&_item
 		display flex
 		align-items flex-start
-		padding 40px 0
+		padding 6.6% 0
 		border-bottom 1px solid $grey
+
+		@media $lgMinus
+			padding 4% 0
+		
+		@media $xxs
+			flex-direction column
 
 		&:first-child
 			border-top 1px solid $grey
 	
 	&_itemName
-		flex 192px 0 1
+		flex 150px 0 1
 		margin-top 5px
-		margin-right 20px
+		margin-right 10.3%
 		font-size 16px
 		line-height 1.8
 		color $black
+
+		@media $lgMinus
+			margin-right 5%
+			flex-basis 110px
+			font-size 13px
+
+		@media $smMinus
+			margin-right 0
+			font-size 12px
+		
+		@media $xxs
+			flex-basis auto
+			margin-bottom 10px
 	
 	&_phoneWrapper
 		margin-bottom 15px
@@ -23,8 +42,17 @@
 		line-height 1.1
 		letter-spacing -0.02em
 		color $black
+
+		@media $lgMinus
+			font-size 27px
+
+		@media $smMinus
+			font-size 23px
 	
 	&_address
 		margin-bottom 19px
 		font-size 16px
 		line-height 1.8
+
+		@media $lgMinus
+			font-size 13px

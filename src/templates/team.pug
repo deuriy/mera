@@ -5,7 +5,7 @@ block content
 	.Company
 		.Label.Company_label Наша команда
 		.Company_wrapper
-			.Company_logo
+			.Company_logo.hidden-smMinus
 				img(src="/img/circles.png" alt="").Company_logoImg
 			.Company_titleWrapper
 				h1.Company_title Работаем для Вас
@@ -25,7 +25,14 @@ block content
 		img(src="/img/mission_team_img.jpg" alt="Миссия компании").Mission_img
 		.Container.Mission_container
 			.Quote.Quote-team.Mission_quote Миссия компании «Мера» — создать высокий уровень комфорта. Официальный год основания компании. Подготовка к выходу на рынок недвижимости. Поиск площадок, разработка проектов, построение финмоделей.
-			.TeamMember.TeamMember-twoCol.Mission_teamMember
+			.TeamMember.TeamMember-twoCol.Mission_teamMember.hidden-smMinus
+				.TeamMember_photoWrapper
+					img(src="/img/team_members/valeriy_papakul.jpg" alt="Сергей Федоров").TeamMember_photo
+				.TeamMember_textWrapper
+					.TeamMember_name Сергей Федоров
+					.TeamMember_post Креативный директор
+		.Mission_teamMemberWrapper
+			.TeamMember.Mission_teamMember.hidden-md
 				.TeamMember_photoWrapper
 					img(src="/img/team_members/valeriy_papakul.jpg" alt="Сергей Федоров").TeamMember_photo
 				.TeamMember_textWrapper
@@ -162,7 +169,7 @@ block content
 							.TeamMember_post Креативный директор
 	.FormSection
 		.Container
-			form(action="").FormBlock
+			form(action="").FormBlock.FormSection_formBlock
 				.FormBlock_inner
 					h3.FormBlock_title Перезвоним, проконсультируем, подберем лучшие варианты
 					.FormBlock_text

@@ -1,16 +1,36 @@
 .ProjectsSwiper
-	width 1560px
+	width 1600px
 	max-width 100%
 	margin-right 0
 	margin-left auto
+	padding-left 40px
+
+	@media $lgMinus
+		width 1210px
+
+	@media $smMinus
+		width 1060px
+	
+	@media $xs
+		padding-right 40px
+	
+	@media $xxs
+		padding-right 20px
+		padding-left 20px
 
 	&_btn
 		position absolute
 		z-index 10
-		top 80px
+		top 11.7%
+
+		@media $xxs
+			top 1.6%
 
 		&-prev
-			right 450px
+			right 28%
 		
 		&-next
-			right 360px
+			right 22.5%
+
+			@media $xxs
+				right 13%

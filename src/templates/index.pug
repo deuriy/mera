@@ -10,7 +10,7 @@ block content
 			.FirstSection_text
 				p Мы помогаем людям стать счастливее, создавая для них современные и комфортные пространства для жизни
 		.FirstSection_bottom
-			.SocLinks.SocLinks-twoCol.FirstSection_socLinks
+			.SocLinks.SocLinks-twoCol.FirstSection_socLinks.hidden-smMinus
 				ul.SocLinks_list
 					li.SocLinks_item
 						a(href="https://www.facebook.com/merakuzbass" target="_blank").SocLink.SocLink-fb
@@ -150,7 +150,7 @@ block content
 		.Container
 			h2.Advantages_title Преимущества и ценности
 			.Advantages_wrapper
-				.Advantages_images
+				.Advantages_images.hidden-xs
 					.Advantages_imgWrapper.Advantages_imgWrapper-reliability.Advantages_imgWrapper-active(data-index="0")
 						img(src="/img/advantages/reliability.jpg" alt="Надёжность")
 					.Advantages_imgWrapper.Advantages_imgWrapper-security(data-index="1")
@@ -191,7 +191,7 @@ block content
 	.Conditions
 		.Container
 			.Conditions_header
-				h2.Conditions_title Условия #[br]приобретения
+				h2.Conditions_title Условия #[br.hidden-smMinus]приобретения
 				a(href="#").BtnOutline.BtnOutline-arrow Все условия
 			.Conditions_paymentMethods
 				.PaymentMethod.Conditions_paymentMethod
@@ -229,7 +229,7 @@ block content
 				a(href="#").ArrowTopRight.NewsBlock_arrowTopRight
 	.FormSection
 		.Container
-			form(action="").FormBlock
+			form(action="").FormBlock.FormSection_formBlock
 				.FormBlock_inner
 					h3.FormBlock_title Перезвоним, проконсультируем, подберем лучшие варианты
 					.FormBlock_text

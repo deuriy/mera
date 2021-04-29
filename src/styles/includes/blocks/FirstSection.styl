@@ -1,7 +1,12 @@
 .FirstSection
-	// position relative
 	padding 202px 60px 106px
 	background url('../img/bg_frontpage_header.png') 0 0 / cover no-repeat
+
+	@media $lgMinus
+		padding 150px 45px 80px
+
+	@media $smMinus
+		padding 110px 30px 30px
 		
 	&::before
 		content ''
@@ -12,34 +17,79 @@
 		height 400px
 		background url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M400 200a200.003 200.003 0 01-123.463 184.776 200.006 200.006 0 01-217.958-43.355A199.998 199.998 0 0188.886 33.706 200 200 0 01200 0v108.195a91.802 91.802 0 00-84.817 56.673 91.802 91.802 0 0066.907 125.173 91.797 91.797 0 0094.243-39.037A91.802 91.802 0 00291.805 200H400z' fill='%23965087'/%3E%3C/svg%3E") 0 0 no-repeat
 
+		@media $lgMinus
+			top 140px
+			width 300px
+			height 300px
+
+		@media $smMinus
+			top 115px
+			left 40px
+			width 250px
+			height 250px
+
 	&_textWrapper
 		position relative
 		display flex
 		align-items flex-start
 		margin-top 56px
 		padding-left 300px
+
+		@media $lgMinus
+			padding-left 215px
+
+		@media $smMinus
+			padding-left 130px
+		
+		@media $xs
+			flex-direction column
+			align-items center
+			text-align center
+		
+		@media $xs
+			padding-left 0
 	
 	&_titleWrapper
 		margin-right 40px
 
+		@media $xs
+			margin-right 0
+
 	&_title
-		width 480px
+		width 5.45em
 		max-width 100%
-		margin-bottom 120px
+		margin-bottom 1.36em
 		color $white
 		font-size 88px
 		line-height 1.1
+
+		@media $lgMinus
+			font-size 67px
+		
+		@media $smMinus
+			margin-bottom 0.9em
+			font-size 55px
+		
+		@media $xs
+			margin-bottom 0.6em
+			font-size 44px
 
 		em
 			font-family $angelicaProFont
 	
 	&_text
-		width 300px
-		margin-top 16px
+		width 16.67em
+		margin-top 0.89em
 		color $white
 		font-weight 500
 		font-size 18px
 		line-height 1.8
+
+		@media $lgMinus
+			font-size 14px
+
+		@media $lgMinus
+			font-size 12px
 	
 	&_bottom
 		position relative
@@ -50,5 +100,6 @@
 		position absolute
 		bottom -30px
 		left 0
-		// bottom 75px
-		// left 60px
+
+		@media $lgMinus
+			bottom -10px

@@ -1,22 +1,61 @@
 .TeamMembers
 	padding 8% 0 0
 
+	@media $smMinus
+		padding-top 4%
+
 	&_row
 		display flex
 		flex-wrap wrap
 		margin-right -20px
 		margin-bottom -90px
 		margin-left -20px
+
+		@media $lgMinus
+			margin-bottom -65px
+
+		@media $smMinus
+			margin-bottom -54px
+
+		@media $xs
+			margin-bottom -40px
+
+		@media $xxs
+			margin-bottom -30px
 	
 	&_col
 		display flex
+		width 33.33%
 		flex calc(33.33% - 40px) 1 1
 		margin-bottom 91px
 		padding-right 20px
 		padding-left 20px
+
+		@media $lgMinus
+			margin-bottom 65px
+
+		@media $smMinus
+			margin-bottom 54px
+		
+		@media $xs
+			width 50%
+			flex-basis calc(50% - 40px)
+			margin-bottom 40px
+		
+		@media $xxs
+			width 100%
+			flex-basis calc(100% - 40px)
+			margin-bottom 30px
+
+		&:nth-child(3n+1)
+			@media $xs
+				justify-content center
 
 		&:nth-child(3n+2)
 			justify-content center
 
 		&:nth-child(3n+3)
 			justify-content flex-end
+
+			@media $xs
+				justify-content center

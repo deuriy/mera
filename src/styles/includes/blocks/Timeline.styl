@@ -7,6 +7,10 @@
 		border 1px solid rgba($roze, .3)
 		border-radius 50%
 
+		@media $lgMinus
+			width 60px
+			height 60px
+
 		&::before,
 		&::after
 			content ''
@@ -22,6 +26,10 @@
 			width 60px
 			height 60px
 			border 1px solid $roze
+
+			@media $xs
+				width 45px
+				height 45px
 		
 		&::after
 			width 24px
@@ -44,7 +52,11 @@
 		position relative
 		display flex
 		align-items center
-		padding 108px 0
+		// padding 108px 0
+		padding 9% 0
+
+		@media $xs
+			flex-direction column
 
 		&:first-child
 			.Timeline_year
@@ -54,13 +66,16 @@
 		&:nth-child(even)
 			flex-direction row-reverse
 
+			@media $xs
+				flex-direction column
+
 			.Timeline_imgWrapper
 				padding-right 0
 				padding-left 120px
 				text-align left
 
 			.Timeline_textWrapper
-				padding-right 120px
+				padding-right 10%
 				padding-left 0
 
 	&_year
@@ -68,36 +83,51 @@
 		top 50%
 		left 50%
 		z-index 10
-		transform translate(-50%, -50%)
-		width 120px
-		height 120px
 		display inline-flex
 		justify-content center
 		align-items center
+		width 3.34em
+		height 3.34em
 		border-radius 50%
 		background #ECEFF6
 		font-size 36px
 		line-height 1.1
 		font-family $angelicaProFont
+		transform translate(-50%, -50%)
+
+		@media $lgMinus
+			font-size 27px
+
+		@media $lgMinus
+			font-size 23px
+		
+		@media $xs
+			position static
 
 	&_imgWrapper,
 	&_textWrapper
 		flex 50% 1 1
 	
 	&_imgWrapper
-		padding-right 120px
+		padding-right 10%
 		text-align right
 	
 	&_textWrapper
-		padding-left 120px
+		padding-left 10%
 	
 	&_title
 		margin-bottom 0.4em
 		font-size 36px
 		line-height 1.1
 		font-family $angelicaProFont
+
+		@media $lgMinus
+			font-size 27px
 	
 	&_text
 		font-size 14px
 		line-height 1.8
 		color $grey
+
+		@media $lgMinus
+			font-size 11px

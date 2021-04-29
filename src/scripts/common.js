@@ -54,4 +54,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	window.addEventListener('scroll', checkHeaderPosition);
 	checkHeaderPosition();
+
+	// Menu Hamburger
+	$('.MenuHamburger').click(function(){
+		$(this).toggleClass('MenuHamburger-open');
+		$(document.body).toggleClass('overlay');
+	});
+
+	// Adaptive menu
+	let $menuButton = $('.MenuButton');
+	let $mobileNavigation = $('.MobileNavigation');
+
+	$($menuButton).on('click', function(e){
+		e.preventDefault();
+		// $mobileNavigation.fadeToggle();
+		$mobileNavigation.toggleClass('MobileNavigation-open');
+	});
+
+	$(window).resize(function(){
+		let wid = $(window).width();
+		if (wid > 991) {
+			$mobileNavigation.removeAttr('style');
+			// $menuButton.removeClass('MenuButton-open');
+		};
+	});
 });

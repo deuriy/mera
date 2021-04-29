@@ -1,8 +1,14 @@
 .PaymentMethod
-	width 560px
+	width 35em
 	max-width 100%
-	// min-height 680px
 	background $white
+	font-size 16px
+
+	@media $lgMinus
+		font-size 12px
+
+	@media $smMinus
+		font-size 10px
 
 	&_imgWrapper
 		position relative
@@ -12,27 +18,27 @@
 
 	&_circle
 		position absolute
-		right 40px
-		bottom -50px
+		right 7%
+		bottom -14.5%
 
 	&_content
 		position relative
-		min-height 336px
-		padding 48px 40px
+		min-height 21em
+		padding 3em 2.5em
 	
 	&_title
 		margin-bottom 0.83em
 		font-style italic
-		font-size 36px
+		font-size 2.25em
 		line-height 1.1
 		font-family $angelicaProFont
 	
 	&_text
-		font-size 16px
+		font-size 1em
 		line-height 1.8
 		color $grey
 	
 	&_arrowLink
 		position absolute
-		right 40px
-		bottom 20px
+		right 7%
+		bottom 6%

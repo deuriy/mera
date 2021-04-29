@@ -1,21 +1,33 @@
 .Company
 	padding 4% 3.1% 4.2%
+	
+	@media $xxs
+		padding-right 20px
+		padding-left 20px
 
 	&_label
-		width 1200px
-		margin 0 auto 6.9em
+		margin 0 0 4.6% 16.7%
+
+		@media $smMinus
+			margin 0 0 3%
 	
 	&_wrapper
 		position relative
 		display flex
+		align-items flex-start
+
+		@media $xs
+			flex-direction column
+			align-items stretch
 	
 	&_logo
+		flex 13.3% 0 1
 		margin-right 3.4%
 	
 	&_customLogo
 		position relative
 		display block
-		flex 240px 0 1
+		flex 13.3% 0 1
 		margin-right 3.4%
 
 		&::before
@@ -39,12 +51,21 @@
 		
 		&-contacts
 			&::after
-				top 13%
+				top 0
 				right 25%
+				margin-top 50%
+				transform translateY(-50%)
 				background $white
 	
 	&_titleWrapper
-		flex 600px 0 1
+		// flex 600px 0 1
+		flex-basis 29.4%
+		margin-right 3.9%
+
+		@media $xs
+			flex-basis auto
+			margin-right 0
+			margin-bottom 20px
 	
 	&_title
 		margin-bottom 0.48em
@@ -52,15 +73,42 @@
 		font-size 88px
 		line-height 1.1
 		letter-spacing -0.02em
+
+		@media $lgMinus
+			font-size 62px
+
+		@media $smMinus
+			font-size 50px
+		
+		@media $xs
+			font-size 36px
+		
+		@media $xxs
+			font-size 30px
 	
 	&_slogan
 		max-width 21em
 		font-size 24px
 		line-height 1.4
 		letter-spacing -0.02em
+
+		@media $lgMinus
+			font-size 18px
+
+		@media $smMinus
+			font-size 15px
+		
+		@media $xs
+			max-width none
+		
+		@media $xxs
+			font-size 13px
 	
 	&_textWrapper
 		flex 600px 0 1
+
+		@media $xs
+			flex auto 0 0
 	
 	&_text
 		width 500px
@@ -70,6 +118,12 @@
 		font-size 14px
 		line-height 1.8
 		color $grey1
+
+		@media $lgMinus
+			margin-bottom 2.5em
+		
+		@media $xs
+			margin-top 0
 
 		p
 			margin-bottom 1.8em

@@ -1,0 +1,72 @@
+.MenuButton
+	position relative
+	display inline-flex
+	justify-content flex-end
+	align-items center
+	width 108px
+	height 36px
+	padding 0 20px
+	border none
+	outline none
+	line-height 36px
+	border-radius 18px
+	background $blue2
+	font-size 14px
+
+	&_text
+		color $white
+
+	&_dot
+		position absolute
+		top 50%
+		width 4px
+		height 4px
+		border-radius 50%
+		background $white
+
+		&:nth-child(1)
+			left 18px
+			margin-top -6px
+
+		&:nth-child(2)
+			left 26px
+			margin-top -6px
+
+		&:nth-child(3)
+			left 18px
+			margin-top 2px
+
+		&:nth-child(4)
+			left 26px
+			margin-top 2px
+	
+	&-circle
+		width 36px
+		padding 0
+		border 1px solid $white
+		background transparent
+
+		.MenuButton_dot
+			top 50%
+			left 50%
+			background $white
+
+			&:nth-child(1)
+				margin-top -8px
+				margin-left -8px
+
+			&:nth-child(2)
+				margin-top -8px
+				margin-left 4px
+
+			&:nth-child(3)
+				margin-top 4px
+				margin-left -8px
+
+			&:nth-child(4)
+				margin-top 4px
+				margin-left 4px
+
+			&:nth-child(5)
+				margin-top -2px
+				margin-left -2px

@@ -5,6 +5,9 @@
 	&_item
 		margin-right 2.5em
 
+		@media $lgMinus
+			margin-right 2em
+
 		&:last-child
 			margin-right 0
 	
@@ -15,6 +18,12 @@
 		font-weight 500
 		font-size 16px
 		line-height 1.25
+
+		@media $lgMinus
+			font-size 14px
+
+		@media $smMinus
+			font-size 13px
 
 		&::after
 			content ''
@@ -37,3 +46,17 @@
 
 			&::after
 				background $black
+	
+	&-mobile
+		.MainMenu_list
+			flex-direction column
+		
+		.MainMenu_item
+			margin-right 0
+			margin-bottom 1.2em
+
+			&:last-child
+				margin-bottom 0
+
+		.MainMenu_link
+			font-size 20px

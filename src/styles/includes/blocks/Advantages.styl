@@ -1,17 +1,35 @@
 .Advantages
-	max-height 1082px
-	// padding 6.3% 0 6%
+	max-height 67.625em
 	padding 6.3% 0 9.7%
 	background #2E385B
+	font-size 16px
+
+	@media $lgMinus
+		padding 6% 0
+		font-size 12px
+
+	@media $smMinus
+		padding 4% 0
+		font-size 10px
+	
+	@media $xs
+		padding 3% 0
+		font-size 8px
 
 	&_title
 		margin-bottom 5.7em
 		color $white
 		font-weight 600
-		font-size 14px
+		font-size 0.875em
 		line-height 1.1
 		letter-spacing -0.02em
 		text-transform uppercase
+
+		@media $smMinus
+			margin-bottom 4.6em
+
+		@media $xs
+			margin-bottom 3.4em
 
 	&_wrapper
 		display flex
@@ -21,6 +39,14 @@
 		flex 600px 0 0
 		min-height 680px
 		margin-right 60px
+
+		@media $lgMinus
+			flex-basis 480px
+			min-height 545px
+
+		@media $smMinus
+			flex-basis 330px
+			min-height 415px
 	
 	&_imgWrapper
 		position absolute
@@ -32,21 +58,35 @@
 		text-align right
 		@extend .transition
 
+		img
+			max-width 83.33%
+
 		&::before,
 		&::after
 			content ''
 			position absolute
 			pointer-events none
 
+			@media $smMinus
+				display none
+
 		&::before
 			width 320px
 			height 320px
+
+			@media $lgMinus
+				width 240px
+				height 240px
 		
 		&::after
 			width 160px
 			height 160px
 			border-radius 50%
 			background $white
+
+			@media $lgMinus
+				width 120px
+				height 120px
 
 		&-active
 			visibility visible
@@ -58,20 +98,34 @@
 				left 0
 				background linear-gradient(180deg, rgba($roze, 0.2) 0%, $roze 80.73%)
 				pointer-events none
+
+				@media $lgMinus
+					top 60px
 			
 			&::after
 				top 160px
 				left 80px
+
+				@media $lgMinus
+					top 124px
+					left 63px
 		
 		&-security
 			&::before
 				top 82px
 				left 160px
 				background url("data:image/svg+xml,%3Csvg viewBox='0 0 160 310' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M41.411 309.548A160.003 160.003 0 00160 155 160.003 160.003 0 0041.411.452L0 155l41.411 154.548z' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='0' y1='-5' x2='0' y2='315' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23965087' stop-opacity='.2'/%3E%3Cstop offset='.807' stop-color='%23965087'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E") 0 0 no-repeat
+
+				@media $lgMinus
+					top 61px
+					left 120px
 			
 			&::after
 				top 157px
 				left 0
+				
+				@media $lgMinus
+					top 115px
 		
 		&-comfort
 			&::before
@@ -79,6 +133,9 @@
 				left 0
 				border-radius 50%
 				background linear-gradient(180deg, rgba($roze, 0.2) 0%, $roze 80.73%)
+
+				@media $lgMinus
+					top 61px
 			
 			&::after
 				display none
@@ -90,10 +147,17 @@
 				border-radius 50%
 				background linear-gradient(180deg, rgba($roze, 0.2) 0%, $roze 80.73%)
 				clip rect(0, 160px, auto, auto)
+
+				@media $lgMinus
+					top 61px
 			
 			&::after
 				top 80px
 				left 160px
+
+				@media $lgMinus
+					top 61px
+					left 120px
 		
 		&-openness
 			&::before
@@ -101,6 +165,9 @@
 				left 0
 				border-radius 50%
 				background url("data:image/svg+xml,%3Csvg viewBox='0 0 320 320' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 160C0 71.634 71.635 0 160 0c88.366 0 160 71.634 160 160s-71.634 160-160 160S0 248.366 0 160zm240 0c0-44.183-35.817-80-80-80s-80 35.817-80 80 35.817 80 80 80 80-35.817 80-80z' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='160' y1='320' x2='160' y2='0' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23965087' stop-opacity='.2'/%3E%3Cstop offset='.807' stop-color='%23965087'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E") 0 0 no-repeat
+
+				@media $lgMinus
+					top 61px
 			
 			&::after
 				display none
@@ -111,18 +178,27 @@
 				left 0
 				border-radius 50%
 				background url("data:image/svg+xml,%3Csvg viewBox='0 0 320 320' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M160 0A160 160 0 110 160h160V0z' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='160' y1='320' x2='160' y2='0' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23965087' stop-opacity='.2'/%3E%3Cstop offset='.807' stop-color='%23965087'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E") 0 0 no-repeat
+
+				@media $lgMinus
+					top 61px
 			
 			&::after
 				top 160px
 				left 80px
+
+				@media $lgMinus
+					top 120px
+					left 61px
 	
 	&_items
 		flex auto 1 1
 		margin-top 50px
 
+		@media $smMinus
+			margin-top 0
+
 	&_item
-		// margin-bottom 39px
-		margin-bottom 36px
+		margin-bottom 2.25em
 
 		&:last-child
 			margin-bottom 0
@@ -134,17 +210,17 @@
 
 				&::before
 					left 0
-					width 80px
+					width 1.667em
 					background $white
 
 			.Advantages_itemContent
-				max-height 400px
+				max-height 25em
 	
 	&_itemTitle
 		position relative
-		padding-left 120px
+		padding-left 2.5em
 		font-weight 600
-		font-size 48px
+		font-size 3em
 		line-height 1.1
 		letter-spacing -0.02em
 		color $blue
@@ -156,8 +232,8 @@
 			position absolute
 			top 0
 			bottom 0
-			left 40px
-			width 40px
+			left 0.8333em
+			width 0.8333em
 			height 2px
 			margin auto
 			background $blue
@@ -165,9 +241,9 @@
 
 	&_itemContent
 		max-height 0
-		margin-left 120px
+		margin-left 7.5em
 		overflow hidden
 		color $white
-		font-size 16px
+		font-size 1em
 		line-height 1.8
 		@extend .transition

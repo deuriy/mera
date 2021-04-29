@@ -1,34 +1,67 @@
 .FormBlock
 	display flex
+	max-width 100%
 	background $blue
+	font-size 16px
+
+	@media $lgMinus
+		font-size 13px
+
+	@media $smMinus
+		width 720px
+		font-size 10px
 
 	&::after
 		content ''
-		flex 315px 0 0
+		flex 19.6875em 0 0
 		margin-left auto
 		background #ECEFF6 url('../img/form_pattern.png') 0 0 no-repeat
+
+		@media $smMinus
+			display none
 	
 	&_inner
-		// padding 80px 60px
-		padding 80px 60px 94px
+		padding 5.2em 3.75em 5.875em
+
+		@media $smMinus
+			flex-grow 1
+		
+		@media $xs
+			max-width 100%
+			padding 3em
+	
+	&_title,
+	&_text
+		@media $xs
+			text-align center
 	
 	&_title
 		margin-bottom 0.9em
 		font-weight 600
-		font-size 36px
+		font-size 2.25em
 		line-height 1.1
 		letter-spacing -0.02em
 		color $white
 	
 	&_text
 		margin-bottom 3.8em
-		font-size 16px
+		font-size 1em
 		line-height 1.1
 		color rgba($white, .5)
+
+		@media $xs
+			margin-bottom 2.8em
 	
 	&_wrapper
 		display flex
 		align-items center
+
+		@media $xs
+			flex-direction column
 	
 	&_formText
-		margin-right 23px
+		margin-right 1.4375em
+
+		@media $xs
+			margin-bottom 20px
+			margin-right 0

@@ -1,34 +1,75 @@
 .NewsBlock
+	position relative
 	display flex
+	align-items flex-start
 	padding 2.7% 0 3.6%
 	border-bottom 1px solid rgba($grey, 0.5)
+	font-size 16px
+
+	@media $lgMinus
+		font-size 13px
+
+	@media $smMinus
+		flex-wrap wrap
+		font-size 10px
+	
+	@media $xs
+		flex-direction column
+		padding 2% 30px 2.5% 0
 
 	&_date
-		flex 87px 0 0
+		flex 6.21428em 0 0
 		margin-right 3.8em
-		font-size 14px
+		font-size 0.875em
 		line-height 1.8
 		color $grey
+
+		@media $lgMinus
+			margin-right 7em
+
+		@media $smMinus
+			margin-right 3em
+		
+		@media $xs
+			flex-basis auto
+			margin-bottom 0.6em
 	
 	&_title
-		flex 450px 0 0
+		flex 12.5em 0 0
 		margin-right 1.4em
 		font-family $angelicaProFont
 		font-style italic
-		font-size 36px
+		font-size 2.25em
 		line-height 1.1
 		color $black
+
+		@media $lgMinus
+			margin-right 2.4em
+		
+		@media $smMinus
+			margin-right 0.9em
+		
+		@media $xs
+			flex-basis auto
 	
 	&_text
-		flex 440px 0 0
+		flex 27.5em 0 0
 		margin-top 6px
 		color $grey
-		font-size 16px
+		font-size 1em
 		line-height 1.8
+
+		@media $xs
+			flex-basis auto
 	
 	&_arrowTopRight
 		flex-shrink 0
 		margin-left auto
+
+		@media $xs
+			position absolute
+			top 20px
+			right 0
 	
 	&-borderTop
 		border-top 1px solid rgba($grey, 0.5)

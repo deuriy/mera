@@ -1,17 +1,25 @@
 .SwiperBtn
 	display inline-flex
-	width 80px
-	height 80px
+	width 5em
+	height 5em
 	border none
 	outline none
 	border-radius 50%
 	background-color $white
 	background-position center center
 	background-repeat no-repeat
+	background-size 0.9375em auto
+	font-size 16px
 	@extend .transition
 
+	@media $lgMinus
+		font-size 12px
+	
+	@media $smMinus
+		font-size 9px
+
 	&-prev
-		background-image url("data:image/svg+xml,%3Csvg width='15' height='26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 1L2 13l12 12' stroke='%23207FAC' stroke-width='2'/%3E%3C/svg%3E")
+		background-image url("data:image/svg+xml,%3Csvg viewBox='0 0 15 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 1L2 13l12 12' stroke='%23207FAC' stroke-width='2'/%3E%3C/svg%3E")
 
 	&-next
 		background-image url("data:image/svg+xml,%3Csvg width='15' height='26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 25l12-12L1 1' stroke='%23207FAC' stroke-width='2'/%3E%3C/svg%3E")

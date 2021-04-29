@@ -1,21 +1,37 @@
 .TeamMember
-	width 340px
+	width 21.25em
+	font-size 16px
+
+	@media $lgMinus
+		font-size 13px
+	
+	@media $smMinus
+		font-size 11px
 
 	&_photoWrapper
 		margin-bottom 33px
 		font-size 0
+
+		@media $lgMinus
+			margin-bottom 25px
+
+		@media $smMinus
+			margin-bottom 20px
+
+		@media $xs
+			margin-bottom 17px
 	
 	&_name
-		width 190px
+		width 7.916em
 		margin-bottom 0.3em
 		font-weight 600
-		font-size 24px
+		font-size 1.5em
 		line-height 1.1
 		letter-spacing -0.02em
 	
 	&_post
 		color $grey
-		font-size 16px
+		font-size 1em
 		line-height 1.8
 	
 	&-twoCol
@@ -30,6 +46,10 @@
 		
 		.TeamMember_photoWrapper
 			margin-bottom 0
+			
+			@media $lgMinus
+				flex-shrink 1
 		
 		.TeamMember_textWrapper
+			margin-right 12.6%
 			text-align right

@@ -2,7 +2,7 @@ header.Header
 	.Header_left
 		a(href="/" title="Mera").Logo.Header_logo
 			img(src="/img/logo_roze.svg" alt="Logo").Logo_imgRoze
-		.MainMenu.MainMenu-black
+		.MainMenu.MainMenu-black.hidden-smMinus
 			ul.MainMenu_list
 				li.MainMenu_item
 					a(href="/company.html").MainMenu_link Компания
@@ -13,5 +13,44 @@ header.Header
 				li.MainMenu_item
 					a(href="/contacts.html").MainMenu_link Контакты
 	.Header_right
-		a(href="tel:+73842233323").Phone.Phone-black.Header_phone +7 (3842) 23-33-23
-		a(href="#").BtnBlue Оставить заявку
+		a(href="tel:+73842233323").Phone.Phone-black.Header_phone.hidden-smMinus +7 (3842) 23-33-23
+		a(href="#").BtnBlue.hidden-smMinus Оставить заявку
+		button(type="button").MenuButton.hidden-md
+			span.MenuButton_dot
+			span.MenuButton_dot
+			span.MenuButton_dot
+			span.MenuButton_dot
+			span.MenuButton_text Меню
+.MobileNavigation#MobileNavigation
+	.MobileNavigation_header
+		a(href="/" title="Mera").Logo.Header_logo
+			img(src="/img/logo.svg" alt="Logo").Logo_imgWhite
+		.MenuButton.MenuButton-circle
+			span.MenuButton_dot
+			span.MenuButton_dot
+			span.MenuButton_dot
+			span.MenuButton_dot
+			span.MenuButton_dot
+	.MobileNavigation_content
+		.MainMenu.MainMenu-mobile.MobileNavigation_mainMenu
+			ul.MainMenu_list
+				li.MainMenu_item
+					a(href="/company.html").MainMenu_link Компания
+				li.MainMenu_item
+					a(href="/team.html").MainMenu_link Команда
+				li.MainMenu_item
+					a(href="/projects.html").MainMenu_link Проекты
+				li.MainMenu_item
+					a(href="/contacts.html").MainMenu_link Контакты
+		.SocLinks.MobileNavigation_socLinks
+			ul.SocLinks_list
+				li.SocLinks_item
+					a(href="https://www.facebook.com/merakuzbass" target="_blank").SocLink.SocLink-fb
+				li.SocLinks_item
+					a(href="https://vk.com/i_mera_ru" target="_blank").SocLink.SocLink-vk
+				li.SocLinks_item
+					a(href="https://www.instagram.com/i_mera_ru/" target="_blank").SocLink.SocLink-instagram
+		.MobileNavigation_phoneWrapper
+			a(href="tel:+73842233323").Phone.MobileNavigation_phone +7 (3842) 23-33-23
+		.MobileNavigation_btnWrapper
+			a(href="#").BtnBlue Оставить заявку

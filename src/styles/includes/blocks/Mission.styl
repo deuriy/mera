@@ -17,8 +17,10 @@
 		background $white
 	
 	&_circle
-		margin-top -188px
-		margin-bottom 45px
+		// margin-top -188px
+		margin-top -14.46em
+		// margin-bottom 45px
+		margin-bottom 3.46em
 	
 	&_bottomText
 		width 500px
@@ -30,16 +32,36 @@
 	
 	&_quote
 		max-width 45%
+
+		@media $smMinus
+			max-width 100%
+			margin-right auto
+			margin-left auto
+	
+	&_teamMemberWrapper
+		@media $smMinus
+			display flex
+			justify-content center
+			padding 40px 40px 0
 	
 	&_teamMember
 		position absolute
-		right 1.6%
-		bottom 0
+		right 3.1%
+		bottom 1.2%
 		max-width 50%
+		
+		@media $smMinus
+			position static
 	
 	&-team
 		padding-bottom 11%
 
+		@media $smMinus
+			padding-bottom 4%
+
 		.Mission_container
 			bottom 0
 			margin-top 26%
+
+			@media $lgMinus
+				margin-top 6%

@@ -5,7 +5,7 @@ block content
 	.Company
 		.Label.Company_label О компании
 		.Company_wrapper
-			.Company_customLogo
+			.Company_customLogo.hidden-smMinus
 			.Company_titleWrapper
 				h1.Company_title Компания «Мера» — 
 				.Company_slogan
@@ -72,7 +72,7 @@ block content
 		.Container
 			h2.Advantages_title Преимущества и ценности
 			.Advantages_wrapper
-				.Advantages_images
+				.Advantages_images.hidden-xs
 					.Advantages_imgWrapper.Advantages_imgWrapper-reliability.Advantages_imgWrapper-active(data-index="0")
 						img(src="/img/advantages/reliability.jpg" alt="Надёжность")
 					.Advantages_imgWrapper.Advantages_imgWrapper-security(data-index="1")
@@ -112,7 +112,7 @@ block content
 							p Мы не стоим на месте, меняемся сами и меняем мир вокруг к лучшему
 	.FormSection
 		.Container
-			form(action="").FormBlock
+			form(action="").FormBlock.FormSection_formBlock
 				.FormBlock_inner
 					h3.FormBlock_title Перезвоним, проконсультируем, подберем лучшие варианты
 					.FormBlock_text

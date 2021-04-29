@@ -6,6 +6,16 @@
 	height 98px
 	@extend .transition
 
+	@media $lgMinus
+		top -80px
+		height 80px
+		padding 20px 30px
+	
+	@media $xs
+		top -70px
+		height 70px
+		padding 15px 20px
+
 	&_left,
 	&_right
 		display flex
@@ -13,10 +23,22 @@
 	
 	&_logo
 		margin-right 87px
+
+		@media $lgMinus
+			margin-right 50px
+
+		@media $smMinus
+			margin-right 40px
 	
 	&_phone
 		margin-top 0.3em
 		margin-right 3.4em
+
+		@media $lgMinus
+			margin-right 2em
+
+		@media $smMinus
+			margin-right 1.6em
 	
 	&-sticky
 		position sticky
@@ -32,3 +54,9 @@
 		.Header_phone
 			margin-top 0
 			margin-right 4.1em
+
+			@media $lgMinus
+				margin-right 2em
+
+			@media $smMinus
+				margin-right 1.6em
