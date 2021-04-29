@@ -1,12 +1,16 @@
 .FirstSection
 	padding 202px 60px 106px
-	background url('../img/bg_frontpage_header.jpg') 0 0 / cover no-repeat
+	background url('../img/bg_frontpage_header.jpg') 0 0 no-repeat
+	background-size: cover;
 
 	@media $lgMinus
 		padding 150px 45px 80px
 
 	@media $smMinus
 		padding 110px 30px 30px
+	@media $xl
+		background-position: bottom right
+		/* position: relative */
 		
 	&::before
 		content ''
