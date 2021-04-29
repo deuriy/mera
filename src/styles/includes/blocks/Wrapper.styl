@@ -1,2 +1,9 @@
 .Wrapper
 	background #ECEFF6
+
+	&:not(.Wrapper-frontpage) 
+		padding-top $xlHeaderHeight
+	  @media $lgMinus
+			padding-top $lgMinusHeaderHeight
+		@media $xs
+		    padding-top $xsHeaderHeight

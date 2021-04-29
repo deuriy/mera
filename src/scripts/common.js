@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		let mainMenu = header.querySelector('.MainMenu');
 		let headerPhone = header.querySelector('.Phone');
 
-		if (scrolled > 150) {
+		if (scrolled > 26) {
 			header.classList.add('Header-sticky');
 			if (header.classList.contains('Header-frontpage')) {
 				headerLogo.querySelector('.Logo_imgWhite').classList.add('hidden');
