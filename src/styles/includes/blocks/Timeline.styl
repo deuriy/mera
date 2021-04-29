@@ -1,15 +1,28 @@
 .Timeline
+	position relative
+
 	&_startDot
 		position relative
-		width 80px
-		height 80px
-		margin 0 auto 40px
+		width 5em
+		height 5em
+		margin 0 auto 2.5em
 		border 1px solid rgba($roze, .3)
 		border-radius 50%
+		font-size 16px
 
 		@media $lgMinus
-			width 60px
-			height 60px
+			font-size 12px
+
+		@media $xs
+			position absolute
+			top 3px
+			z-index 10
+			left -12px
+			width 2.4em
+			height 2.4em
+			margin-bottom 0
+			border-color $roze
+			font-size 10px
 
 		&::before,
 		&::after
@@ -23,21 +36,27 @@
 			border-radius 50%
 
 		&::before
-			width 60px
-			height 60px
+			width 3.75em
+			height 3.75em
 			border 1px solid $roze
 
 			@media $xs
-				width 45px
-				height 45px
+				display none
 		
 		&::after
-			width 24px
-			height 24px
+			width 1.5em
+			height 1.5em
 			background $roze
+
+			@media $xs
+				width 1.4em
+				height 1.4em
 	
 	&_items
 		position relative
+
+		@media $xs
+			padding-left 20px
 
 		&::after
 			content ''
@@ -47,21 +66,44 @@
 			left 50%
 			width 1px
 			background rgba($grey, .5)
+
+			@media $xs
+				top 22px
+				bottom 0
+				left 0
 	
 	&_item
 		position relative
 		display flex
 		align-items center
-		// padding 108px 0
 		padding 9% 0
+
+		@media $lgMinus
+			padding 7% 0
+		
+		@media $smMinus
+			padding 5% 0
 
 		@media $xs
 			flex-direction column
+			align-items flex-start
+			margin-bottom 40px
+			padding 0
+
+			&:last-child
+				margin-bottom 0
 
 		&:first-child
 			.Timeline_year
 				background $roze
 				color $white
+
+				@media $xs
+					background transparent
+					color $blue
+
+					&::before
+						display none
 
 		&:nth-child(even)
 			flex-direction row-reverse
@@ -74,9 +116,15 @@
 				padding-left 120px
 				text-align left
 
+				@media $xs
+					padding-left 0
+
 			.Timeline_textWrapper
 				padding-right 10%
 				padding-left 0
+
+				@media $xs
+					padding-right 0
 
 	&_year
 		position absolute
@@ -98,22 +146,51 @@
 		@media $lgMinus
 			font-size 27px
 
-		@media $lgMinus
+		@media $smMinus
 			font-size 23px
 		
 		@media $xs
-			position static
+			position relative
+			top 0
+			left 0
+			margin-bottom 0.7em
+			transform none
+			width auto
+			height auto
+			color $blue
+
+			&::before
+				content ''
+				position absolute
+				top 7px
+				left -26px
+				width 14px
+				height 14px
+				border-radius 50%
+				background $roze
 
 	&_imgWrapper,
 	&_textWrapper
 		flex 50% 1 1
+
+		@media $xs
+			flex-basis 100%
 	
 	&_imgWrapper
 		padding-right 10%
 		text-align right
+		
+		@media $xs
+			order 1
+			padding-right 0
+			text-align left
 	
 	&_textWrapper
 		padding-left 10%
+
+		@media $xs
+			margin-bottom 15px
+			padding-left 0
 	
 	&_title
 		margin-bottom 0.4em
@@ -123,6 +200,12 @@
 
 		@media $lgMinus
 			font-size 27px
+
+		@media $smMinus
+			font-size 23px
+
+		@media $xs
+			font-size 20px
 	
 	&_text
 		font-size 14px

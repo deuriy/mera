@@ -10,25 +10,48 @@
 		right 0
 		left 0
 		margin-top 13.2%
+
+		@media $lgMinus
+			margin-top 10%
+
+		@media $smMinus
+			margin-top 8%
+
+		@media $xs
+			margin-top 5%
 	
 	&_bottom
-		padding-bottom 72px
+		padding 0 20px 72px
 		text-align center
 		background $white
+
+		@media $lgMinus
+			padding-bottom 54px
+
+		@media $smMinus
+			padding-bottom 45px
 	
 	&_circle
-		// margin-top -188px
 		margin-top -14.46em
-		// margin-bottom 45px
 		margin-bottom 3.46em
+
+		@media $lgMinus
+			margin-top 3em
+			margin-bottom 3em
 	
 	&_bottomText
-		width 500px
+		width 31.25em
 		max-width 100%
 		margin 0 auto
 		font-weight 500
 		font-size 16px
 		line-height 1.8
+
+		@media $lgMinus
+			font-size 13px
+
+		@media $xs
+			font-size 12px
 	
 	&_quote
 		max-width 45%

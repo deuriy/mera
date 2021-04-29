@@ -14,4 +14,21 @@
 			margin-bottom 0
 
 	&_link
+		position relative
+		padding-bottom 0.2em
 		font-weight 600
+
+		&::after
+			content ''
+			position absolute
+			right 0
+			bottom 0
+			left 0
+			width 0
+			height 2px
+			margin auto
+			background $black
+			@extend .transition
+		
+		&:hover::after
+			width 100%
