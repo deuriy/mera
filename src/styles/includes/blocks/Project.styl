@@ -1,90 +1,96 @@
 .Project
-	display flex
-	align-items flex-start
+  display flex
 
-	@media $xs
-		flex-direction column-reverse
-		align-items center
+  @media $xs
+    flex-direction column-reverse
+    align-items center
 
-	&_textWrapper
-		flex 440px 0 0
+  &_textWrapper
+    flex 440px 0 0
 
-		@media $xs
-			flex-basis auto
-			width 450px
-			max-width 100%
-	
-	&_category
-		margin-bottom 6.9em
-		color $blue
-		font-weight 600
-		font-size 12px
-		line-height 1.1
-		text-transform uppercase
-		letter-spacing 0.12em
+    @media $xs
+      flex-basis auto
+      width 450px
+      max-width 100%
 
-		@media $lgMinus
-			font-size 9px
+    @media $sm
+      flex 410px 0 0
+  
+  &_category
+    margin-bottom 6.9em
+    color $blue
+    font-weight 600
+    font-size 12px
+    line-height 1.1
+    text-transform uppercase
+    letter-spacing 0.12em
 
-		@media $smMinus
-			margin-bottom 3em
-	
-	&_titleWrapper
-		position relative
-		margin-right -30px
-		margin-bottom 2.5em
-		
-		@media $smMinus
-			margin-right -20px
-			margin-bottom 2em
-		
-		@media $xs
-			margin-right 0
-	
-	&_title,
-	&_subtitle
-		line-height 1.1
-		letter-spacing -0.02em
-	
-	&_title
-		margin-bottom 0.1em
-		font-size 36px
+    @media $lgMinus
+      font-size 9px
 
-		@media $lgMinus
-			font-size 27px
+    @media $smMinus
+      margin-bottom 3em
+  
+  &_titleWrapper
+    position relative
+    margin-right -30px
+    margin-bottom 2.5em
+    
+    @media $smMinus
+      margin-right -20px
+      margin-bottom 2em
+    
+    @media $xs
+      margin-right 0
+  
+  &_title,
+  &_subtitle
+    line-height 1.1
+    letter-spacing -0.02em
+  
+  &_title
+    margin-bottom 0.1em
+    font-size 36px
 
-		@media $smMinus
-			font-size 20px
-	
-	&_subtitle
-		font-size 96px
+    @media $lgMinus
+      font-size 27px
 
-		@media $lgMinus
-			font-size 71px
+    @media $smMinus
+      font-size 20px
+  
+  &_subtitle
+    font-size 96px
 
-		@media $lgMinus
-			font-size 50px
-	
-	&_estatePanel
-		margin-right -160px
-		margin-bottom 88px
+    @media $lgMinus
+      font-size 71px
 
-		@media $lgMinus
-			margin-right -120px
-			margin-bottom 65px
+    @media $lgMinus
+      font-size 50px
+  
+  &_estatePanel
+    margin-right -160px
+    margin-bottom 88px
 
-		@media $smMinus
-			margin-right -100px
-			margin-bottom 40px
+    @media $lgMinus
+      margin-right -120px
+      margin-bottom 65px
 
-		@media $xs
-			margin-right 0
-			margin-bottom 40px
-	
-	&_imageWrapper
-		flex auto 1 1
+    @media $smMinus
+      margin-right -100px
+      margin-bottom 40px
 
-		@media $xs
-			width 450px
-			max-width 100%
-			margin-bottom 30px
+    @media $xs
+      margin-right 0
+      margin-bottom 40px
+  
+  &_imageWrapper
+    flex auto 1 1
+
+    @media $xs
+      width 450px
+      max-width 100%
+      margin-bottom 30px
+  &_img
+    @media $sm
+      min-height 100%
+      object-fit cover

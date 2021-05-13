@@ -11,7 +11,6 @@ validator-out
 dist
 sandbox
 gulp.1
-package-lock.json
 **/*.mp4
 .vscode
 yarn.lock
