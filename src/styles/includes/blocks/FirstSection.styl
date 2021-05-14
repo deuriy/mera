@@ -1,13 +1,17 @@
 .FirstSection
 	padding 202px 60px 106px
-	background url('../img/bg_frontpage_header.jpg') 0 0 no-repeat
-	background-size: cover;
+	background url('../img/bg_frontpage_header.png') 0 0 / cover no-repeat
 
 	@media $lgMinus
 		padding 150px 45px 80px
 
 	@media $smMinus
 		padding 110px 30px 30px
+	
+	@media $xs
+		padding 70px 30px 30px
+		background #414761
+
 	@media $xl
 		background-position: bottom right
 		/* position: relative */
@@ -31,6 +35,9 @@
 			left 40px
 			width 250px
 			height 250px
+		
+		@media $xxs
+			top 90px
 
 	&_textWrapper
 		position relative
@@ -58,6 +65,7 @@
 
 		@media $xs
 			margin-right 0
+			margin-bottom 20px
 
 	&_title
 		width 5.45em
@@ -76,7 +84,7 @@
 		
 		@media $xs
 			margin-bottom 0.6em
-			font-size 44px
+			// font-size 44px
 
 		em
 			font-family $angelicaProFont
@@ -90,15 +98,22 @@
 		line-height 1.8
 
 		@media $lgMinus
-			font-size 14px
+			// font-size 14px
+			font-size 16px
 
-		@media $lgMinus
-			font-size 12px
+		// @media $lgMinus
+		// 	font-size 12px
 	
 	&_bottom
 		position relative
 		margin-top 106px
 		text-align center
+
+		@media $xs
+			margin-top 70px
+		
+		@media $xxs
+			margin-top 50px
 	
 	&_socLinks
 		position absolute

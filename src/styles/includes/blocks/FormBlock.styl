@@ -5,11 +5,12 @@
 	font-size 16px
 
 	@media $lgMinus
-		font-size 13px
+		// font-size 13px
+		font-size 15px
 
 	@media $smMinus
 		width 720px
-		font-size 10px
+		// font-size 10px
 
 	&::after
 		content ''
@@ -21,14 +22,17 @@
 			display none
 	
 	&_inner
+		max-width 100%
 		padding 5.2em 3.75em 5.875em
 
 		@media $smMinus
 			flex-grow 1
+			padding 3em 2em 3.5em
 		
 		@media $xs
-			max-width 100%
-			padding 3em
+			padding 2em 1em
+			// max-width 100%
+			// padding 3em
 	
 	&_title,
 	&_text
@@ -42,6 +46,13 @@
 		line-height 1.1
 		letter-spacing -0.02em
 		color $white
+
+		@media $xs
+			font-size 1.85em
+			line-height normal
+
+		@media $xxs
+			font-size 1.5em
 	
 	&_text
 		margin-bottom 3.8em
@@ -49,15 +60,24 @@
 		line-height 1.1
 		color rgba($white, .5)
 
+		@media $smMinus
+			margin-bottom 2.7em
+		
 		@media $xs
-			margin-bottom 2.8em
+			margin-bottom 2em
 	
 	&_wrapper
 		display flex
-		align-items center
+		// align-items center
+		align-items stretch
 
 		@media $xs
+			width 27.5em
+			max-width 100%
+			margin-right auto
+			margin-left auto
 			flex-direction column
+			// align-items stretch
 	
 	&_formText
 		margin-right 1.4375em
@@ -65,3 +85,6 @@
 		@media $xs
 			margin-bottom 20px
 			margin-right 0
+		
+		@media $xxs
+			margin-bottom 15px

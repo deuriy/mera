@@ -5,10 +5,12 @@
 	font-size 16px
 
 	@media $lgMinus
-		font-size 12px
+		// font-size 12px
+		font-size 15px
 
 	@media $smMinus
-		font-size 10px
+		// font-size 10px
+		font-size 14px
 
 	&_imgWrapper
 		position relative
@@ -21,10 +23,20 @@
 		right 7%
 		bottom -14.5%
 
+		@media $xxs
+			bottom -8%
+
 	&_content
 		position relative
 		min-height 21em
 		padding 3em 2.5em
+
+		@media $smMinus
+			padding 2.8em 1.8em
+
+		@media $xxs
+			min-height 17em
+			padding 1.8em 1.3em
 	
 	&_title
 		margin-bottom 0.83em
@@ -32,6 +44,9 @@
 		font-size 2.25em
 		line-height 1.1
 		font-family $angelicaProFont
+
+		@media $xxs
+			font-size 1.8em
 	
 	&_text
 		font-size 1em

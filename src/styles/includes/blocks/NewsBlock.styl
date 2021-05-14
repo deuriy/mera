@@ -8,14 +8,22 @@
 
 	@media $lgMinus
 		font-size 13px
+		// font-size 15px
 
 	@media $smMinus
 		flex-wrap wrap
 		font-size 10px
+		// font-size 12px
+		// font-size 14px
 	
 	@media $xs
 		flex-direction column
-		padding 2% 30px 2.5% 0
+		// padding 2% 30px 2.5% 0
+		padding 20px 30px 20px 0
+		font-size 14px
+
+		&:last-child
+			border-bottom none
 
 	&_date
 		flex 6.21428em 0 0
@@ -51,6 +59,10 @@
 		
 		@media $xs
 			flex-basis auto
+			margin-bottom 10px
+		
+		@media $xxs
+			font-size 1.8em
 	
 	&_text
 		flex 27.5em 0 0

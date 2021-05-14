@@ -1,5 +1,7 @@
 .BtnBlue
 	display inline-flex
+	justify-content center
+	align-items center
 	padding 1.2307em 3.2769em
 	border none
 	border-radius 40px
@@ -14,14 +16,15 @@
 	@extend .transition
 	background-repeat no-repeat
 
-	@media $lgMinus
-		font-size 11px
-	
-	@media $xs
-		font-size 10px
-
 	&:hover
 		background-color $roze
+
+	// @media $lgMinus
+		// font-size 11px
+		// font-size 12px
+	
+	// @media $xs
+	// 	font-size 10px
 	
 	&-arrow
 		padding 1.65em 4.8em 1.66em 3em

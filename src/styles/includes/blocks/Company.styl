@@ -84,7 +84,8 @@
 			font-size 36px
 		
 		@media $xxs
-			font-size 30px
+			// font-size 30px
+			font-size 32px
 	
 	&_slogan
 		max-width 21em
@@ -101,8 +102,8 @@
 		@media $xs
 			max-width none
 		
-		@media $xxs
-			font-size 13px
+		// @media $xxs
+		// 	font-size 13px
 	
 	&_textWrapper
 		flex 600px 0 1
@@ -121,17 +122,23 @@
 
 		@media $lgMinus
 			margin-bottom 2.5em
-			font-size 13px
+			// font-size 13px
 		
 		@media $smMinus
 			width auto
-			font-size 12px
+			// font-size 12px
 		
 		@media $xs
 			margin-top 0
 
 		p
 			margin-bottom 1.8em
+
+			@media $smMinus
+				margin-bottom 1.3em
+
+			@media $xs
+				margin-bottom 1em
 
 			&:last-child
 				margin-bottom 0
